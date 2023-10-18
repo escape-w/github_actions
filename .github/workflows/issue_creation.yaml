@@ -1,5 +1,5 @@
 name: Build Operation Report Tool
-
+on: [push]
 jobs:
     runs-on: ubuntu-latest
     steps:
