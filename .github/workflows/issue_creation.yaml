@@ -1,5 +1,5 @@
 name: Build Operation Report Tool
-on: [push]
+#on: [push]
 jobs:
     first-play:
         runs-on: ubuntu-latest
