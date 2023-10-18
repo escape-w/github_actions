@@ -1,5 +1,11 @@
 name: Build Operation Report Tool
-on: [push]
+on: 
+    workflow_dispatch:
+    push:
+        branches:
+            - 'main'
+        paths-ignore:
+            - '.github/workflows/**'
 jobs:
     first-play:
         runs-on: ubuntu-latest
