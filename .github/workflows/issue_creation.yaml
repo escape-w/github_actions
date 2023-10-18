@@ -1,1 +1,7 @@
 name: Build Operation Report Tool
+
+jobs:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Hello world
+          run:  echo "hello"

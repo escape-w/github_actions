@@ -1,0 +1,2 @@
+name: Build Operation Report Tool
+runs-on: ubuntu-latest
