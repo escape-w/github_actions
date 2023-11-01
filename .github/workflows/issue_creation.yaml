@@ -14,7 +14,7 @@ jobs:
             - name: Hello world
               run:  echo "hello"
             - name: List file before checkout
-              run:  ls -lrt; echo "$HELLO and $HELLO_VAR"
+              run:  ls -lrt; echo "${{ secrets.HELLO }} and ${{ vars.HELLO_VAR }}"
             - name: Code Checkout
               uses: actions/checkout@v2
             - name: List file after checkout
