@@ -9,7 +9,7 @@ on:
 jobs:
     first-play:
         runs-on: ubuntu-latest
-        environment: production
+        environment: prod
         steps:
             - name: Hello world
               run:  echo "hello"
