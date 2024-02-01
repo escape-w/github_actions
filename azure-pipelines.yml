@@ -12,11 +12,13 @@ jobs:
     displayName: Wait for external validation
     pool: server
     timeoutInMinutes: 1 # job times out in 3 days
+
+  - job: new
     steps:
-      - task: Bash@3
-        inputs:
-          targetType: 'inline'
-          script: |
-            # Write your commands here
-            
-            echo 'Hello world'
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: |
+          # Write your commands here
+          
+          echo 'Hello world'
