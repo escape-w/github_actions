@@ -7,11 +7,16 @@ name: $(Build.SourceBranchName)-$(Date:ddMMyy)-$(Rev:rr)-$(Build.DefinitionName)
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    ls -ltr
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+jobs:
+  - job: waitForValidation
+    displayName: Wait for external validation
+    pool: ubuntu-latest
+    timeoutInMinutes: 1 # job times out in 3 days
+    steps:
+      - task: Bash@3
+        inputs:
+          targetType: 'inline'
+          script: |
+            # Write your commands here
+            
+            echo 'Hello world'
