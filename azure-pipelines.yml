@@ -10,7 +10,7 @@ pool:
 jobs:
   - job: waitForValidation
     displayName: Wait for external validation
-    pool: ubuntu-latest
+    pool: server
     timeoutInMinutes: 1 # job times out in 3 days
     steps:
       - task: Bash@3
