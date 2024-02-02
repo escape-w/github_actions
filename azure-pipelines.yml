@@ -17,7 +17,7 @@ jobs:
   timeoutInMinutes: $[variables.jobTimeoutInMinutes]
   steps:
   - task: ManualValidation@0
-    timeoutInMinutes: $[variables.taskTimeoutInMinutes]
+    timeoutInMinutes: ${{ variables.taskTimeoutInMinutes }}
     inputs:
       notifyUsers: |
         test@test.com
