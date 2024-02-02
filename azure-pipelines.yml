@@ -8,8 +8,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-- name: jobTimeoutInMinutes
-  value: 320
+- group: DEV_GROUP
 jobs:
 - job: waitForValidation
   displayName: Wait for external validation
