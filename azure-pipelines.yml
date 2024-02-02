@@ -14,7 +14,7 @@ jobs:
 - job: waitForValidation
   displayName: Wait for external validation
   pool: server
-  timeoutInMinutes: (${{ variables.jobTimeoutInMinutes }})
+  timeoutInMinutes: $[variables.jobTimeoutInMinutes]
   steps:
   - task: ManualValidation@0
     timeoutInMinutes: 20
