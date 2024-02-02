@@ -9,6 +9,8 @@ pool:
 
 variables:
 - group: DEV_GROUP
+- name: taskTimeoutInMinutes
+  value: 3
 
 jobs:
 - job: waitForValidation
