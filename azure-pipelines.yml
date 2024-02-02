@@ -20,7 +20,7 @@ jobs:
   steps:
   - task: ManualValidation@0
     displayName: ${{ variables.taskTimeoutInMinutes }}
-    timeoutInMinutes: 2
+    timeoutInMinutes: ${{ variables.taskTimeoutInMinutes }}
     inputs:
       notifyUsers: |
         test@test.com
